@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           title: 'First Method',
           // You can use the library anywhere in the app even in theme
           theme: ThemeData(
-            primarySwatch: Colors.blue,
+            primarySwatch: Colors.orange,
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),
           home: child,

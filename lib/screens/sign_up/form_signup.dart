@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase/custom_widgets/custom_button.dart';
+import 'package:flutter_firebase/screens/forgot_password.dart';
+import 'package:flutter_firebase/screens/sign_in/sign_in.dart';
 import 'package:flutter_screenutil/src/size_extension.dart';
 import '../../constants.dart';
 
@@ -9,10 +12,11 @@ class FormSignUp extends StatefulWidget {
 
 class _FormSignUpState extends State<FormSignUp> {
 
-  var _obscureTextRP=true;
-  var _obscureTextP=true;
-  final _key=GlobalKey<FormState>();
+  bool _obscureTextRP=true;
+  bool _obscureTextP=true;
   late String _email;
+  final _key=GlobalKey<FormState>();
+  final _signUpBtn="SignUp";
 
   TextEditingController _pass = TextEditingController();
   TextEditingController _repass = TextEditingController();
@@ -28,38 +32,16 @@ class _FormSignUpState extends State<FormSignUp> {
           SizedBox(height: 20.sp,),
           buildRePasswordTextFormField(),
           SizedBox(height: 50.sp,),
-          buildLoginGestureDetector(),
+          CustomButton(_signUpBtn,()=> {
+            if(_key.currentState!.validate()){
+              _key.currentState!.save(),
+            print("Successfully form data validate and save!"),
+              Navigator.push(context, MaterialPageRoute(builder: (context) => SignIn()))
+            } else {
+            print("Some thing is wrong!\nCheck your custom button or form! \nData validation and save failed!"),
+            }
+          }),
         ],
-      ),
-    );
-  }
-
-
-  GestureDetector buildLoginGestureDetector() {
-    return GestureDetector(
-      onTap: () {
-        if(_key.currentState!.validate()){
-          _key.currentState!.save();
-          print(_email + "    " + _pass.text);
-        } else {
-          print("soooooooooooooommmmmeeeee thing is wrong");
-        }
-      },
-      child: Container(
-        height: 55.sp,
-        width: double.infinity,
-        decoration: BoxDecoration(
-          color: Colors.orange,
-          borderRadius: BorderRadius.circular(20.sp),
-        ),
-        child: Center(
-            child: Text(
-              "Sign Up",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20.sp),
-            )),
       ),
     );
   }

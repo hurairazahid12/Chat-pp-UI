@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase/custom_widgets/custom_button.dart';
+import 'package:flutter_firebase/models/chat.dart';
+import '../chatapp/mainscreen/chats/chat_main_screen.dart';
+import 'package:flutter_firebase/screens/forgot_password.dart';
+import 'package:flutter_firebase/screens/sign_in/sign_in.dart';
+import 'package:flutter_firebase/screens/sign_up/sign_up.dart';
 import 'package:flutter_screenutil/src/size_extension.dart';
 
 import '../../constants.dart';
@@ -14,6 +20,7 @@ class _FormSignInState extends State<FormSignIn> {
   final _key=GlobalKey<FormState>();
   late String _email;
   late String _pass;
+  final _signInBtn =" SignIn";
 
   @override
   Widget build(BuildContext context) {
@@ -24,42 +31,55 @@ class _FormSignInState extends State<FormSignIn> {
           buildEmailTextFormField(),
           SizedBox(height: 20.sp,),
           buildPasswordTextFormField(),
-          SizedBox(height: 50.sp,),
-          buildLoginGestureDetector(),
+          SizedBox(height: 15.sp,),
+          buildForgotPasswordGestureDetector(context),
+          SizedBox(height: 30.sp,),
+          CustomButton(_signInBtn, ()=> {
+          if(_key.currentState!.validate()){
+              _key.currentState!.save(),
+                  print("Successfully form data validate and save!"),
+                  Navigator.push(
+                    context, MaterialPageRoute(builder: (context) =>ChatMainScreen())),
+          } else {
+            print("Some thing is wrong!\nCheck your custom button or form! \nData validation and save failed! "),
+          }
+          }),
         ],
       ),
     );
   }
 
 
-  GestureDetector buildLoginGestureDetector() {
+
+
+
+
+
+  //*********************************************************************************************************************
+
+
+
+
+
+  GestureDetector buildForgotPasswordGestureDetector(BuildContext context) {
     return GestureDetector(
           onTap: () {
-            if(_key.currentState!.validate()){
-              _key.currentState!.save();
-                print(_email + "    " + _pass);
-              } else {
-                print("soooooooooooooommmmmeeeee thing is wrong");
-            }
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) =>ForgotPass()));
           },
-          child: Container(
-            height: 55.sp,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: Colors.orange,
-              borderRadius: BorderRadius.circular(20.sp),
+          child: Align(
+            alignment: Alignment.topRight,
+            child: Text(
+              "Forgot Password",
+              style: TextStyle(color: TextOrange, decoration: TextDecoration.underline),
             ),
-            child: Center(
-                child: Text(
-                  "Sign In",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20.sp),
-                )),
           ),
         );
   }
+
+
+
+
 
 
   TextFormField buildPasswordTextFormField() {
@@ -103,6 +123,10 @@ class _FormSignInState extends State<FormSignIn> {
       ),
     );
   }
+
+
+
+
 
 
   TextFormField buildEmailTextFormField() {

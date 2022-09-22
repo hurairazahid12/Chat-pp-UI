@@ -75,6 +75,22 @@ class SignIn extends StatelessWidget {
   }
 
 
+
+
+
+
+
+
+
+
+
+  //************************************************************************************************************
+
+
+
+
+
+
   GestureDetector buildSignUpGestureDetector(BuildContext context) {
     return GestureDetector(
       onTap: () {
@@ -85,18 +101,23 @@ class SignIn extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            "New here?   ",
+            "New here?  ",
             style: TextStyle(color: TextColor),
           ),
           Text(
             "SignUp",
             style: TextStyle(
-                color: TextColor, decoration: TextDecoration.underline),
+                color: TextOrange, decoration: TextDecoration.underline),
           ),
         ],
       ),
     );
   }
+
+
+
+
+
 
   AppBar buildAppBar() {
     return AppBar(
