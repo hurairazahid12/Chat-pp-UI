@@ -102,11 +102,12 @@ class _ResetPasswordState extends State<ResetPassword> {
                                 () => {
                                 if(_key.currentState!.validate()){
                                 _key.currentState!.save(),
-                                print("Successfully form data validate and save!"),
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => SignIn()))
+                                          builder: (context) => SignIn()),
+                                  ),
+                                  print("Successfully form data validate and save!"),
                                 } else
                                   {
                                     print(

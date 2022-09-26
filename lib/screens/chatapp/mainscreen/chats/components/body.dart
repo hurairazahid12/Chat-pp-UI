@@ -10,7 +10,7 @@ class Body extends StatefulWidget {
 }
 class _BodyState extends State<Body> {
   List chatData = [
-    {"name": "Huraira Zahid", "lastMessage": "Hope you are fine", "image": "assets/images/huraira.jpeg", "time": "3m ago", "isActive": true, "Messages":{
+    {"name": "Huraira Zahid", "lastMessage": "Hope you are fine", "image": "assets/images/huraira.jpeg", "time": "3m ago", "isActive": true, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -23,8 +23,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-      }},
-    {"name": "Talal Saroya", "lastMessage": "What's up bro", "image": "assets/images/pic9.jpg", "time": "19m ago", "isActive": false, "Messages":{
+      ]},
+    {"name": "Talal Saroya", "lastMessage": "What's up bro", "image": "assets/images/pic9.jpg", "time": "19m ago", "isActive": false, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -37,8 +37,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Abd ul haq", "lastMessage": "Asslam-o-Alaikum Huraira", "image": "assets/images/pic2.jpg", "time": "1 week ago", "isActive": true, "Messages":{
+    ]},
+    {"name": "Abd ul haq", "lastMessage": "Asslam-o-Alaikum Huraira", "image": "assets/images/pic2.jpg", "time": "1 week ago", "isActive": true, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -51,8 +51,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Abd ul hadi", "lastMessage": "Are you here?", "image": "assets/images/pic6.jpg", "time": "30m ago", "isActive": true, "Messages":{
+    ]},
+    {"name": "Abd ul hadi", "lastMessage": "Are you here?", "image": "assets/images/pic6.jpg", "time": "30m ago", "isActive": true, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -65,8 +65,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Abdullah Zahid", "lastMessage": "Have you done your work?", "image": "assets/images/pic4.jpg", "time": "1m ago", "isActive": false, "Messages":{
+    ]},
+    {"name": "Abdullah Zahid", "lastMessage": "Have you done your work?", "image": "assets/images/pic4.jpg", "time": "1m ago", "isActive": false, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -79,8 +79,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Ahmad Raza", "lastMessage": "I won the match", "image": "assets/images/pic5.jpg", "time": "55m ago", "isActive": true, "Messages":{
+    ]},
+    {"name": "Ahmad Raza", "lastMessage": "I won the match", "image": "assets/images/pic5.jpg", "time": "55m ago", "isActive": true, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -93,8 +93,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Husnain", "lastMessage": "I'm doing my job well!", "image": "assets/images/pic7.jpg", "time": "59m ago", "isActive": false, "Messages":{
+    ]},
+    {"name": "Husnain", "lastMessage": "I'm doing my job well!", "image": "assets/images/pic7.jpg", "time": "59m ago", "isActive": false, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -107,8 +107,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Hassan", "lastMessage": "Are you here?", "image": "assets/images/pic16.jpg", "time": "2 days ago", "isActive": true, "Messages":{
+    ]},
+    {"name": "Hassan", "lastMessage": "Are you here?", "image": "assets/images/pic16.jpg", "time": "2 days ago", "isActive": true, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -121,8 +121,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Zain Shabbir", "lastMessage": "Have you done your work?", "image": "assets/images/pic8.jpg", "time": "1m ago", "isActive": false, "Messages":{
+    ]},
+    {"name": "Zain Shabbir", "lastMessage": "Have you done your work?", "image": "assets/images/pic8.jpg", "time": "1m ago", "isActive": false, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -135,8 +135,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Ahsan Khalid", "lastMessage": "I won the match", "image": "assets/images/pic1.jpg", "time": "yesterday", "isActive": true, "Messages":{
+    ]},
+    {"name": "Ahsan Khalid", "lastMessage": "I won the match", "image": "assets/images/pic1.jpg", "time": "yesterday", "isActive": true, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -149,8 +149,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Hamid", "lastMessage": "Whatever, Everything will be fine", "image": "assets/images/pic10.jpg", "time": "23m ago", "isActive": true, "Messages":{
+    ]},
+    {"name": "Hamid", "lastMessage": "Whatever, Everything will be fine", "image": "assets/images/pic10.jpg", "time": "23m ago", "isActive": true, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -163,8 +163,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Sultan", "lastMessage": "Are you here?", "image": "assets/images/pic15.jpg", "time": "1/9/2022", "isActive": true, "Messages":{
+    ]},
+    {"name": "Sultan", "lastMessage": "Are you here?", "image": "assets/images/pic15.jpg", "time": "1/9/2022", "isActive": true, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -177,8 +177,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Yousaf", "lastMessage": "Have you done your work?", "image": "assets/images/pic12.jpg", "time": "1m ago", "isActive": false, "Messages":{
+    ]},
+    {"name": "Yousaf", "lastMessage": "Have you done your work?", "image": "assets/images/pic12.jpg", "time": "1m ago", "isActive": false, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -191,8 +191,8 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
-    {"name": "Zohaib", "lastMessage": "I won the match", "image": "assets/images/pic13.jpg", "time": "28/8/2022", "isActive": true, "Messages":{
+    ]},
+    {"name": "Zohaib", "lastMessage": "I won the match", "image": "assets/images/pic13.jpg", "time": "28/8/2022", "isActive": true, "Messages":[
       {"text": "Hi,", "date": "Toady", "isSendByMe": "false"},
       {"text":"How are you?,", "date":"Toady","isSendByMe":"false" },
       {"text":"I'm fine what about you?,", "date":"Toady","isSendByMe":"true" },
@@ -205,7 +205,7 @@ class _BodyState extends State<Body> {
       {"text":"Where are you,", "date":"Toady","isSendByMe":"true" },
       {"text":"In class and I will text you later,", "date":"Toady","isSendByMe":"false" },
       {"text":"ok,", "date":"Toady","isSendByMe":"false" }
-    }},
+    ]},
   ];
 // Chat chat= Chat();
   @override
@@ -216,7 +216,7 @@ class _BodyState extends State<Body> {
         return GestureDetector(
           onTap: (){
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) =>ChattingMainScreen(chatData)));
+                context, MaterialPageRoute(builder: (context) =>ChattingMainScreen(chatData[index])));
           },
           child: Card(
             color: Colors.white.withOpacity(0.0),
@@ -225,15 +225,25 @@ class _BodyState extends State<Body> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Ink(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.orange, width: 1.0),
-                  shape: BoxShape.circle,
-                ),
-                child: CircleAvatar(
-                  radius: 23.sp,
-                  backgroundImage: AssetImage(chatData[index]["image"]),
-                ),
+              Stack(
+                alignment: Alignment(-0.75, -0.99),
+                children: [
+                  Ink(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.orange, width: 1.0),
+                      shape: BoxShape.circle,
+                    ),
+                    child: CircleAvatar(
+                      radius: 23.sp,
+                      backgroundImage: AssetImage(chatData[index]["image"]),
+                    ),
+                  ),
+                  chatData[index]["isActive"] ==true ?
+                  CircleAvatar(
+                    radius: 4.sp,
+                    backgroundColor: Colors.orange,
+                  ) : Container(),
+                ],
               ),
               // Text("${chatData[index]["name"]}"),
               Padding(
